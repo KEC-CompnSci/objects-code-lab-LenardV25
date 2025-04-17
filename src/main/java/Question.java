@@ -62,9 +62,10 @@ public class Question {
     //methods
 
     public void AskQuestion(Scanner scanner){
-        System.out.println(question + " (" + totalMarks + " Marks)");
-        System.out.print("Your Answer: ");
-        studentAnswer = scanner.nextLine();
+        System.out.println(question + " (" + totalMarks + " marks)");
+        System.out.println("Your Answer: ");
+        String studentAnswer = scanner.nextLine();
+        this.studentAnswer = studentAnswer;
     }
 
     public int CheckAnswer(){
